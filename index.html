@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+
+    <script type="text/javascript" src= "js/main.js"></script>
+
+</head>
+<body onload="load()"> <!-- a funcao load serve pra carregar o body  -->
+    <!-- <script>
+        alert("meu primeiro js");
+    </script> -->
+
+    <h1>Minha página</h1>
+
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <p id="agradecimento" onclick="redirecionar()"></p> <!-- id pra usar no JS no document e o onclick "direcionar" leva pra outra página -->
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouser aqui</p>
+    <!-- this tranforma em uma elemento assim ele pode ficar independente -->
+    <!-- quando passar o mouse o texto vai trocar e valtar JS -->
+    <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouser aqui</p>
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouser aqui</p>
+    <!-- o this deixa a função independente, não comprometendo a outra função -->
+    <!-- com elemento eu não preciso do id="mousemove" posso tirar -->
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+</body>
+</html>
